@@ -5,10 +5,15 @@ public class Toyota extends Car{
         super("Toyota", model, year, price, color, miles);
     }
 
+    public void start(){
+        System.out.println("Twist the key to ignition to start "+brand+" "+model);
+    }
+
     public void reliable(){
         System.out.println(brand + " "+ model + "is reliable");
     }
 }
+
 /*
 1. Toyota:
 extra methods:
