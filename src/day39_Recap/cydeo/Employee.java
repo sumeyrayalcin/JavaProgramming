@@ -33,7 +33,7 @@ public class Employee extends Person {
         super(name, age, gender);
         setEmployeeId(employeeId);
         setSalary(salary);
-        setGender(gender);
+        setJobTitle(jobTitle);
     }
 
     public void work(){
