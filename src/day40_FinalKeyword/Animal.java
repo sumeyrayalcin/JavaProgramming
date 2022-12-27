@@ -2,22 +2,23 @@ package day40_FinalKeyword;
 
 public class Animal {
     private String name;
-    private  final String breed;
+    private final String breed;
     private final char gender;
-    private  final String color;
+    private final String color;
     private String size;
     private int age;
 
-
-
-    public Animal(String breed, char gender, String color, String size, int age) {
+    public Animal(String name, String breed, char gender, String color, String size, int age) {
+        this.name = name;
         this.breed = breed;
         this.gender = gender;
         this.color = color;
         this.size = size;
         this.age = age;
     }
-// getters
+
+    ////----------Setters---------------------
+
     public String getName() {
         return name;
     }
@@ -42,7 +43,8 @@ public class Animal {
         return age;
     }
 
-    // setters
+
+    //----------Setters---------------------
 
     public void setName(String name) {
         this.name = name;
@@ -56,11 +58,17 @@ public class Animal {
         this.age = age;
     }
 
+
+    //----------Setters---------------------
+
+
     public void eat(){
-        System.out.println(name + " is eating ");
+        System.out.println(name+" is eating");
     }
 
-    public void drink(){
-        System.out.println(name + " is drinking water");
+    public final void drink(){
+        System.out.println(name+" is drinking water");
     }
+
+
 }
