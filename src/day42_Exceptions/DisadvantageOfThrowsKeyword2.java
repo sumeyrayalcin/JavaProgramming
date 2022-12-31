@@ -1,7 +1,10 @@
 package day42_Exceptions;
 
 public class DisadvantageOfThrowsKeyword2 {
-    public static void main(String[] args)  {
+
+
+    public static void main(String[] args) throws  InterruptedException {
+
         // System.out.println("Hello");
 
         method1();
@@ -53,5 +56,7 @@ public class DisadvantageOfThrowsKeyword2 {
         method3();
     }
 
-}
+
+
+
 }
