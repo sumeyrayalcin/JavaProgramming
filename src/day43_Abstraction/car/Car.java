@@ -43,9 +43,10 @@ public abstract class Car {
     }
 
     public void setPrice(double price) {
-        if (price<=0){
+        if (price <= 0){
             throw new RuntimeException("invalid price "+ price);
         }
+        this.price = price;
     }
 
     public void stop(){
