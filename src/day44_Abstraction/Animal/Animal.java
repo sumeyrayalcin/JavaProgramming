@@ -74,7 +74,11 @@ public abstract class Animal {
         return color;
     }
 
+    public final void drink(){
+        System.out.println(getName() +" is drinking");
+    }
 
+    public abstract void eat();
     @Override
     public String toString() {
         return getClass().getSimpleName()+"{" +
